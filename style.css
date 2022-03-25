@@ -268,7 +268,7 @@ p::first-letter {
 .loader {
   position: absolute;
   top: 250px;
-  left: 50%;
+  left: 46%;
   transform: translateX(-50px);
   width: 200px;
   height: 100px;
@@ -284,6 +284,12 @@ p::first-letter {
   border-radius: 50%;
   background: #f1f1f1;
   animation: monte 0.3s alternate infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .loader {
+    left: 35%;
+  }
 }
 
 .point:nth-child(1) {
