@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the <span>3rd generation</span> Pokedex !</h1>
+
+    <form class="recherche-poke">
+      <div>
+        <label for="recherchePoke" class="labelPoke">Search by name</label>
+        <input type="search" id="recherchePoke" class="recherchePoke" />
+      </div>
+      <div>
+        <label for="rechercheType" class="labelType">Search by type</label>
+        <input type="search" id="rechercheType" class="rechercheType" />
+      </div>
+
+      <!-- Loader -->
+      <div class="loader">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
+    </form>
+
+    <div class="container">
+      <ul class="liste-poke"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
