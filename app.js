@@ -426,4 +426,15 @@ searchInputType.addEventListener("input", function (e) {
   }
 });
 
-// test
+// Reload Page for Api
+
+function reload() {
+  if (window.localStorage) {
+    if (!localStorage.getItem("firstLoad")) {
+      localStorage["firstLoad"] = true;
+      window.location.reload();
+    } else localStorage.removeItem("firstLoad");
+  }
+};
+
+reload()
