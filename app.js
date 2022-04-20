@@ -26,6 +26,19 @@ const types = {
   dark: "#626283",
 };
 
+// Reload Page for Api
+
+function reload() {
+  if (window.localStorage) {
+    if (!localStorage.getItem("firstLoad")) {
+      localStorage["firstLoad"] = true;
+      window.location.reload();
+    } else localStorage.removeItem("firstLoad");
+  }
+};
+
+reload()
+
 // Make Array of Weakness and strength for each type
 
 function fetchType() {
@@ -426,15 +439,3 @@ searchInputType.addEventListener("input", function (e) {
   }
 });
 
-// Reload Page for Api
-
-function reload() {
-  if (window.localStorage) {
-    if (!localStorage.getItem("firstLoad")) {
-      localStorage["firstLoad"] = true;
-      window.location.reload();
-    } else localStorage.removeItem("firstLoad");
-  }
-};
-
-reload()
