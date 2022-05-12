@@ -246,7 +246,7 @@ function createCard(arr) {
     const divBack = document.createElement("div");
     divBack.className = "divBack";
     divBack.style.background =
-      'url("/Image/pokeball.png") no-repeat center, linear-gradient(#666468 50%, #8F8D91 50%)';
+      'url("/Image/pokeball.png") no-repeat center, linear-gradient(#B20600 50%, #B8B8B8  50%)';
     const idCarte = document.createElement("p");
     idCarte.innerText = `ID: # ${arr[i].id}`;
     idCarte.className = "id";
